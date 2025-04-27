@@ -18,7 +18,7 @@ const config: Config = {
 
     I thrive on learning new technologies and delivering high-quality solutions. Fluent in English, Hindi, Marathi, and Kannada, I bring strong communication skills to collaborative environments. In my free time, I enjoy exploring new tech trends and staying updated with industry advancements.`,
     avatarUrl: "https://i.ibb.co/VpzZbCgd/1728644293937.jpg", // Retained placeholder as no avatar provided
-    resumeLink: "/Vijay_Babre_Resume.pdf",
+    resumeLink: "../../public/Vijay_Babre.pdf",
     email: "vijaybabre0@gmail.com",
     location: "Bidar, Karnataka, India",
     socialLinks: [

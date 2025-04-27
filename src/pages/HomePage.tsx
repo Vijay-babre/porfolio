@@ -61,18 +61,18 @@ const HomePage: React.FC = () => {
                 </motion.p>
               </div>
               
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Button to="/contact" variant="primary" size="lg">
                   Get in Touch
                 </Button>
-                <Button 
-                  href={config.personalInfo.resumeLink} 
-                  variant="outline" 
-                  size="lg" 
-                  icon={<Download size={18} />}
+                <a
+                  href={config.personalInfo.resumeLink}
+                  className="inline-flex items-center gap-2 px-6 py-3 text-lg font-medium text-white transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg hover:from-purple-500 hover:to-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  download
                 >
-                  Resume
-                </Button>
+                  <Download size={18} />
+                  Download Resume
+                </a>
               </div>
             </motion.div>
             
@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4"
+              className="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 margin-top-8"
               style={{ borderColor: config.theme.primaryColor }}
             >
               <img 
